@@ -1,0 +1,52 @@
+.flow{
+	width: 100px;
+	height: 100px;
+	background: #AFFF6B;
+	position: relative;
+	-webkit-animation-name: bob; 
+	-webkit-animation-duration: 3s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: normal;
+
+	-moz-animation-name: bob;
+	-moz-animation-duration: 3s;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-direction: normal;
+
+	animation-name: bob;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+}
+
+@-webkit-keyframes bob{
+	0%{left: 0px; background: #5CD6E8;}
+	100%{left:1430px; background: #AFFF6B;}
+}
+
+@-moz-keyframes bob{
+	0%{left: 0px; background: #5CD6E8;}
+	100%{left:1430px; background: #AFFF6B;}
+}
+
+@keyframes bob{
+	0%{left: 0px; background: #5CD6E8;}
+	100%{left:1430px; background: #AFFF6B;}
+} 
+
+.one{
+	width: 200px;
+	height: 30px;
+	background: violet;
+	margin: 30px auto;
+	box-shadow: 1px 1px 6px black;
+	transition: all ease-in-out 1s;
+}
+
+.one:hover{
+	width: 400px;
+	height: 40px;
+	background: lightpink;
+	box-shadow: 11px 11px 11px grey;
+	transition: all ease-in-out 1s;
+}

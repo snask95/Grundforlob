@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Opgave 14</title>
+		<link rel="stylesheet" href="">
+	</head>
+
+	<body>
+		<label>Indtast tekst</label>
+
+		<input type="text" id="user_input" placeholder="Skriv et ord eller en sætning..">
+		<button onclick="colorChars(document.getElementById('user_input').value)">Tæl tegn!</button>
+
+		<div id="target"></div>
+
+		<script type="text/javascript">
+			function colorChars(string) {
+				var result = "";
+
+				for(i = 0; i <= string.length; i++) {
+					if(i % 2) {
+						colored = '<span>' + string.charAt(i).toUpperCase() + '<span>';
+						result += colored.fontcolor('green');
+					} else {
+						colored = '<span>' + string.charAt(i).toLowerCase() + '<span>';
+						result += colored.fontcolor('blue');
+					}
+				}
+
+				document.getElementById('target').innerHTML = result;
+			}
+		</script>	
+	</body>
+</html>

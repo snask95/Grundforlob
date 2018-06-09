@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Opgave 4</title>
+		<link rel="stylesheet" href="">
+	</head>
+
+	<body>
+		<script type="text/javascript">
+			function secondsToHourMin() {
+				var seconds = document.getElementById("secondsinput").value;
+
+				if ( seconds === "") {
+					alert("Indsæt antal sekunder")
+				}
+
+				var secToMin = (seconds - (seconds % 60)) / 60;
+				var secRest = seconds % 60;
+				var secToHour = (secToMin - (secToMin % 60)) / 60;
+				var minRest = secToMin % 60;
+
+				document.write("Du har indtastet: " + seconds + "sek - det giver: " + secToHour + "timer, " + minRest + "minutter og " + secRest + "sekunder."); 
+			}
+		</script>
+
+		<div>
+			<label>Indsæt antal sekunder</label>
+			<input type="number" id="secondsinput">
+		</div>
+
+		<div>
+			<input type="button" value="Beregn" onclick="secondsToHourMin();">
+		</div>
+	</body>
+</html>

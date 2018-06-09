@@ -1,0 +1,188 @@
+body{
+	background-image: url('images/sky.png'), url('images/Skyback.jpg');
+	background-position: left 150px, left top;
+	background-repeat: repeat-x, repeat;
+}
+
+#main{
+	margin: auto;
+	width: 800px;
+	height: 100%;
+	background: silver;
+}
+/*---------TOPPEN---------*/
+header{
+	width: 800px;
+	height: 200px;
+	float: left;
+}
+
+header img{
+	float: left;
+	margin-right: 10px;
+}
+
+header ul{
+	list-style: none;
+	margin: 80px 0;
+	padding: 0;
+}
+
+header ul li{
+	display: inline;
+	float: left;
+	width: 11em;
+	color: grey;
+	font-family: 'Arima Madurai', cursive;
+	font-size: 16px;
+}
+
+header ul li a{
+	font: bold 14px verdana;
+	letter-spacing: 2px;
+	color: grey;
+	text-decoration: none;
+}
+
+header ul li a:hover{
+	color: #555;
+}
+/*-----------------MIDTEN------------*/
+#add{
+	width: 780px;
+	height: 230px;
+	background: white;
+	float: left;
+	border: solid 10px #d6d6d6;
+	-moz-border-radius: 10px;
+	-webkit: border-radius:10px;
+	border-radius: 10px;
+	position: relative;
+}
+
+#add p{
+	width: 200px;
+	font: italic 14px verdana;
+	padding-left: 30px;
+	color: grey;
+	float: left;
+}
+
+#add p span{
+	font-weight: bold;
+}
+
+#add img{
+	float: right;
+	margin: 20px;
+}
+
+#add #GetApp{
+	width: 200px;
+	height: 55px;
+	background: #6dcff6;
+	position: absolute;
+	left: 170px;
+	top: 145px;
+	text-align: center;
+	line-height: 55px;
+	border: solid 5px #f26522;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	-moz-box-shadow: 3px 5px 5px #333;
+	-webkit-box-shadow: 3px 5px 5px #333;
+	box-shadow: 3px 5px 5px #333;
+}
+
+#add #GetApp a{
+	font-family: 'Arima Madurai', cursive;
+	font-size: 30px;
+	color: #f26522;
+	text-decoration: none;
+}
+
+.box{
+	width: 233px;
+	height: auto;
+	margin-top: 20px;
+	text-align: justify;
+	position: relative;
+	color: #666;
+	font-family: 'Arima Madurai', cursive;
+}
+
+.storbox{
+	width: 466px;
+}
+
+.box img{
+	width: 100%;
+	margin-bottom: 10px;
+	display: block;
+	margin-top: 70%;
+}
+
+.venstre{
+	float: left;
+}
+
+.midden{
+	float: left;
+	margin-left: 50px;
+}
+
+.hojre{
+	float: right;
+}
+/*--------------BUNDEN----------*/
+footer{
+	width: 798px;
+	height: 150px;
+	float: left;
+		border: solid 1px #999;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	padding: 0;
+}
+
+.farven{
+	background: -webkit-linear-gradient(top, #EEE 0%, #666 100%);
+	background: -moz-linear-gradient(top, #EEE 0%, #666 100%);
+}
+
+.footerbox{
+	width: 233px;
+	height: 150px;
+	margin: 5px;
+	text-align: justify;
+	position: relative;
+	color: #444;
+	font-family: 'Arima Madurai', cursive;
+	font-size: 14px;
+}
+
+.footervenstre{
+	float: left;
+}
+
+.footermidden{
+	float: left;
+	margin-left: 50px;
+}
+
+.footerhojre{
+	float: right;
+}
+
+.footerbox img{
+	float: left;
+	margin-right: 10px;
+}
+
+.footerbox h3{
+	font-family: verdana;
+	font-size: 16px;
+	color: black;
+}

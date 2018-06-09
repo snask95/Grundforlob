@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Scroll navigation</title>
+		<link rel="stylesheet" href="jQueryScrollNav.css">
+		<script src="../jQuery/jquery-3.3.1.min.js"></script>
+
+		<script type="text/javascript">
+			function ScrollTo(id) {
+				$('html,body').animate({
+					scrollTop: $('#' + id).offset().top
+				}, 'slow');
+			}
+		</script>
+	</head>
+
+	<body>
+		<div id="menu">
+			<a href="javascript:void(0)" onclick="ScrollTo('home')">Home</a>
+			<a href="javascript:void(0)" onclick="ScrollTo('side1')">Side1</a>
+			<a href="javascript:void(0)" onclick="ScrollTo('side2')">Side2</a>
+			<a href="javascript:void(0)" onclick="ScrollTo('side3')">Side3</a>	
+		</div>
+		
+		<div id="home" class="content">
+			<h1>
+				Home	
+			</h1>
+		</div>
+
+		<div id="side1" class="content">
+			<h1>
+				Side 1
+			</h1>
+		</div>
+
+		<div id="side2" class="content">
+			<h1>
+				Side 2
+			</h1>
+		</div>
+
+		<div id="side3" class="content">
+			<h1>
+				Side 3
+			</h1>
+		</div>								
+	</body>
+</html>

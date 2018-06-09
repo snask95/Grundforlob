@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Opgave 9</title>
+		<link rel="stylesheet" href="">
+	</head>
+
+	<body>
+		<label>Indtast tekst:</label>
+
+		<input type="text" id="user_input" placeholder="Skriv her...">
+		<button onclick="reverseString(document.getElementById('user_input').value)">Vis</button>
+
+		<div id="reverseBox"></div>
+		
+		<script type="text/javascript">
+			function reverseString(input) {
+				var splitString = input.split("");
+				var reverseArray = splitString.reverse();
+				var joinArray = reverseArray.join("");
+
+				document.getElementById('reverseBox').innerHTML = joinArray;
+			}
+		</script>
+	</body>	
+</html>

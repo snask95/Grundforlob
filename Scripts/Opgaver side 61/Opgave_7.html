@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Opgave 7</title>
+		<link rel="stylesheet" href="">
+	</head>
+
+	<body>
+		<label>Indtast tekst</label>
+
+		<input type="text" id="user_input" placeholder="Skriv her...">
+		<button onclick="letters(document.getElementById('user_input').value)">Vis</button>
+
+
+		<script type="text/javascript">
+			function letters(input) {
+				var first = input.substring(0,5);
+				var middle = input.substring(5,10);
+				var last = input.substring(10,15);
+				var used = input.length;
+				var all = input;
+
+				if ( used > 15 ) {
+					alert("Hov, for mange tegn!"); 
+				}
+
+				document.write('De første tegn er: ' + first + "<br>" + ' De miderst tegn er: ' + middle + "<br>" + 'De sidste tegn er: ' + last + "<br>" + 'Antal tegn er: ' + used + "<br>" + 'Hele tekst: ' + all);
+			}
+		</script>
+	</body>
+</html>

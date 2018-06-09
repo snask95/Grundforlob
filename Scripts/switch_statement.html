@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<title></title>
+			<link rel="stylesheet" href="">
+		</head>
+
+		<body>
+			<script type="text/javascript">
+				var dato = new Date();
+				var dag = dato.getDay();
+				switch (dag) {
+					case 1:
+						document.write("Mandag");
+						break;
+					case 2:
+						document.write("Tirsdag");
+						break;
+					case 3:
+						document.write("Onsdag");
+						break;
+					case 4:
+						document.write("Torsdag");
+						break;	
+					case 5:
+						document.write("Fredag");
+						break;	
+					default:
+						document.write("Nu er det weekend!");
+						break;							
+				}
+			</script>
+		</body>
+	</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8" />
+	<title>Opgave 2</title>
+	</head>
+	
+	<body> 
+	<script type="text/javascript">
+	function divideNumber() {
+	var input = document.getElementById("numberinput").value;
+	var divisor = document.getElementById("divisorinput").value;
+
+	if (input === "" || divisor === "") {
+	alert("Indsæt venligst to tal før beregning!")
+	}
+
+	document.write("Tallet " + input + " delt med " + divisor + " giver " + input / divisor);
+	}
+	</script>
+
+	<div>
+	<label>Tast et tal</label>
+	<input type="number" id="numberinput" />
+	</div>
+
+	<div>
+	<label>Tast en divisor</label>
+	<input type="number" id="divisorinput" />
+	</div>
+
+	<div>
+	<input type="button" value="Beregn" onclick="divideNumber();" />
+	</div>
+
+	</body>
+</html>

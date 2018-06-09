@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Hide Callback</title>
+		<link rel="stylesheet" href="">
+		<script src="../jQuery/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript">
+			function doSomething() {
+				alert('Jeg er doSomething!!!');
+			}
+			$(document).ready(function () {
+				$('#hide').click(function () {
+					$('div').hide(1000, doSomething ());
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+		<button id="hide">Skjul</button>
+		<div>Her er noget tekst!!!</div>	
+	</body>
+</html>

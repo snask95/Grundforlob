@@ -1,0 +1,21 @@
+body {
+	background-color: #f3f3f3;
+}
+
+.headerBox {
+	margin: 0px;
+	padding: 5px;
+	text-align: center;
+	font-weight: bold;
+	background: #c9c9c9;
+	border: 1px solid black;
+}
+
+.hideBox {
+	margin: 0px;
+	padding: 5px;
+	background: #ffffff;
+	border: 1px solid black;
+	height: 150px;
+	display: none;
+}

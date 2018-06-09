@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Udfordring_4</title>
+		<link rel="stylesheet" href="">
+	</head>
+<!-- Lav en metode der finder et tilfældigt tal mellem 0 og 10. Kald metoden fra en knap. -->	
+	<body>
+		<input type="button" name="knap" value="Tryk" id="knap" onclick="findTal()">
+		<script type="text/javascript">
+			function findTal() {
+				var randomTal = Math.round(Math.random() * 10);
+				alert(randomTal);
+			}
+		</script>
+	</body>
+</html>

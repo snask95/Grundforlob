@@ -1,0 +1,85 @@
+body {
+	background-color: #E8ECED;
+	font-family: 'Nanum Gothic', sans-serif;
+}
+
+/* Navigationsbar */
+.navbar-static-top {
+	background-image: url('banner.jpg');
+}
+ /* Farven på inverse af navbaren */ 
+.navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-brand:hover {
+    color: #A9E3F9;
+    background-color: transparent;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #fff;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+    color: #A9E3F9;
+    background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+}
+
+/* Home farven */
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+	font-weight: bold;
+	background: none;
+}
+
+/* Fremhæve området */
+.jumbotron {
+	background-color: #FFFAFF;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, .30); 
+	font-family: 'Abel', sans-serif;
+}
+
+.jumbotron p {
+	font-size: 20px;
+}
+
+.jumbotron h2 {
+	text-shadow: 0px 1px 2px rgba(0, 0, 0, .20)
+}
+
+/* Main css */
+.main-box {
+	background-color: #FFFAFF;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, .18); 
+	padding: 60px;
+}
+
+.main-box h2 {
+	font-weight: bold;
+	font-family: 'Abel', sans-serif;
+}
+
+.main-box h3 {
+	font-weight: bold;
+	font-family: 'Abel', sans-serif;
+}
+
+.border-left-col {
+	border-left: 1px solid #A5A7A8;
+}
+
+/* Footer */
+.navbar-fixed-bottom {
+	background-color: #DBF9FF;
+}
+
+.navbar-fixed-bottom ul li {
+	list-style: none;
+}
+
+.fab {
+	font-size: 20px;
+	margin: 0px 5px;
+}
+
+

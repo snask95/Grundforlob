@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<link rel="stylesheet" href="">
+		<script type="text/javascript">
+			function changeClass(object, value) {
+				object.className = value;
+			}
+		</script>
+		<style type="text/css" media="screen">
+			.normal {
+				color: white;
+				font-weight: bold;
+				border: 1px solid black;
+				padding: 2px;
+				background-color: #000000;
+				text-decoration: none;
+			}
+
+			.hover {
+				color: black;
+				font-weight: bold;
+				border: 1px solid black;
+				padding: 2px;
+				background-color: #C5C5C5;
+				text-decoration: none;
+			}
+		</style>
+	</head>
+
+	<body>
+		<table>
+			<tr>
+				<td>
+					<a href="http://www.panmedia.dk" target="_blank">
+						<div class="normal" onmouseover="changeClass(this, 'hover')" onmouseout="changeClass(this, 'normal')">
+							Panmedia ApS
+						</div>
+					</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="http:/sang-skriver.azurewebsites.net" target="_blank">
+						<div class="normal" onmouseover="changeClass(this, 'hover')" onmouseout="changeClass(this, 'normal')">
+							Århus Sangskriverværksted
+						</div>
+					</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="http:/www.frogpill.dk" target="_blank">
+						<div class="normal" onmouseover="changeClass(this, 'hover')" onmouseout="changeClass(this, 'normal')">
+							Frog Pill Inc.
+						</div>
+					</a>
+				</td>
+			</tr>
+		</table>	
+	</body>
+</html>

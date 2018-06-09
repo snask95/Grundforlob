@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<link rel="stylesheet" href="">
+		<script type="text/javascript">
+			var posBlaa = 50;
+			var posRoed = 50;
+			function next() {
+				document.getElementById("roed").style.left = (posRoed += 5) + "px";
+				document.getElementById("blaa").style.left = (posBlaa += 10) + "px";
+				window.setTimeout("next();", 100);
+			}
+		</script>
+	</head>
+
+	<body onload="next();">
+		<div id="roed" style="position: absolute; left: 0px; top: 100px; width: 100px; height: 100px;">
+			<img src="Images/Red.jpg" alt="" border="0" />
+		</div>
+		<div id="roed" style="position: absolute; left: 0px; top: 300px; width: 100px; height: 100px;">
+			<img src="Images/Blue.jpg" alt="" border="0" />
+		</div>
+	</body>
+</html>

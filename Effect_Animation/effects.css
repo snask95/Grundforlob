@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=coiny');
+
+h1{
+	font-family: 'Coiny', cursive;
+	font-size: 40px;
+	margin-left: 30px;
+	margin-bottom: 60px;
+}
+
+div{
+	width: 200px;
+	height: 50px;
+	background-color: #7AD0B3;
+	margin:  0px 30px 60px;
+}
+.one{
+	-webkit-text-fill-color: #530031;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: #000;
+}
+
+.two{
+	color: #CA293E;
+	text-shadow: 
+	-1px -1px 0 #000,
+	1px -1px 0 #000,
+	-1px 1px 0 #000,
+	1px 1px 0 #000;
+}
+
+.three{
+	color: #66E3F5;
+	text-shadow: 0px 0px 5px #8C71E8;
+}
+
+.four{
+	background: -webkit-linear-gradient(#EEE, #333);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.five{
+	box-shadow: 5px 5px 3px #AFFF6B;
+}
+
+
+/* Online generator - css3generator.com */
+.six{
+	background: -moz-linear-gradient(left, #FF14AB 0%, #603535 100%);
+	/*FF3.6-15*/
+	background: -webkit-linear-gradient(left, #FF14AB 0%, #603535 100%);
+	/*Chrome 10-25, Safari 5.1-6*/
+	background: linear-gradient(to right, #FF14AB 0%, #603535 100%);
+	/*W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+*/
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ff3232', endColorstr='#603535', GradientType=1);
+	/*IE6-9*/
+}
+
+/* Online Generator - www.colorzilla.com/gradient-editor */
+
+.seven{
+	border-radius: 25px 0px 25px 0px;
+	background: #A1CEC8;
+}
+
+.eight{
+	width: 100px;
+	height: 100px;
+	background: #3479D9;
+	border-radius: 50%;
+}

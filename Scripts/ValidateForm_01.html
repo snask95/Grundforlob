@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<link rel="stylesheet" href="">
+		<script type="text/javascript">
+			function ValidateForm() {
+				error = 0;
+
+				if ((document.forms[0].ForNavn.value == '') && (error == 0)) {
+					alert('Du skal udfylde feltet med dit Fornavn!');
+					document.forms[0].ForNavn.focus();
+					error = 1;
+				}
+
+				if ((document.forms[0].EfterNavn.value == '') && (error == 0)) {
+					alert('Du skal udfylde feltet med dit Efternavn');
+					document.forms[0].EfterNavn.focus();
+					error = 1;
+				}
+
+				if (error == 0) {
+					document.forms[0].submit();
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<form action="ValidateForm_01.html" method="post" onsubmit="ValidateForm()">
+			Fornavn: <input type="text" name="ForNavn" size="30" placeholder="Skriv dit navn her..." />
+			<br />
+			Efternavn: <input type="text" name="EfterNavn" size="30" placeholder="Skriv dit efternavn her..." />
+			<br />
+			<input type="submit" value="Send"> 
+		</form>
+	</body>
+</html>

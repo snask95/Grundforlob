@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<link rel="stylesheet" href="">
+		<script type="text/javascript">
+			function PostBack() 
+			{
+				var intTal1 = document.getElementById('Tal1');
+				var intTal2 = document.getElementById('Tal2');
+				var intRes = parseInt(intTal1.value) + parseInt(intTal2.value);
+				document.getElementById('Resultat').innerHTML = "Resultat: " + intRes;
+			}
+		</script>
+	</head>
+
+	<body>
+		<input type="text" id="Tal1"> + <input type="text" id="Tal2">
+		<br>
+		<input type="button" onclick="PostBack()" value="Send">
+		<br>
+		<p id="Resultat"></p>
+	</body>
+</html>

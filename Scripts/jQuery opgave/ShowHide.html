@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>ShowHide</title>
+		<link rel="stylesheet" href="">
+		<script src="../jQuery/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#hide").click(function () {
+					$("div").hide ();
+				});
+				$("#show").click(function () {
+					$("div").show();
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+		<button id="hide">Skjul</button>
+		<button id="show">Vis</button>
+		<div>Her er noget tekst!!!</div>	
+	</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<link rel="stylesheet" href="">
+	</head>
+
+	<body>
+	 <script type="text/javascript">
+	 	var strMsg = "";
+	 	try {
+	 		document.writte("Hej");
+	 	}
+	 	catch (err) {
+	 		strMsg = "Der opstod en fejl på siden. \n\n";
+	 		strMsg += "Beskrivelse" + err.description + "\n\n";
+	 		strMsg += "Klik OK for at fortsætte. \n\n";
+	 		alert(strMsg);
+	 	}
+	 </script>	
+	</body>
+</html>

@@ -1,0 +1,38 @@
+body {
+	margin-left: 0px;
+}
+
+#menuWrapper {
+	position: relative;
+	left: 0px;
+	top: 20px;
+	width: 150px;
+	height: 350px;
+	z-index: 2;
+}
+
+#menu {
+	width: 150px;
+	height: 350px;
+	background-color: grey;
+	border: 1px solid black;
+	padding-left: 25px;
+}
+
+#ud {
+	display: none;
+}
+
+#top {
+	width: 16px;
+	height: 25px;
+	padding-left: 202px;
+	padding-top: 5px;
+}
+
+#bigImg {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	z-index: 1;
+}

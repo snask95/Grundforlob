@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Fadenavbar</title>
+		<link rel="stylesheet" href="">
+		<script src="../jQuery/jquery-3.3.1.min.js"></script>
+
+		<script type="text/javascript">
+			function skiftBox(name) {
+				$('#content_text').fadeTo(500, 0, function () {
+					$('#content_text').html($('#' + name).html());
+					$('#content_text').fadeTo(500, 1, function() {
+						// no jedi things to see here, move on inspector Clouseau
+					});
+				});
+			}
+			$(document).ready(function () {
+				skiftBox('home');
+			});
+		</script>
+	</head>
+
+	<body>
+		<a href="#" onclick="skiftBox('home');">Home</a>
+		<a href="#" onclick="skiftBox('box1');">Vis Box</a>
+		<a href="#" onclick="skiftBox('box2');">Vis Box</a>
+		<a href="#" onclick="skiftBox('box3');">Vis Box</a>	
+		<br>
+
+		<div id="content_text">Bwhahahah!
+		</div>
+		<div id="home" style="display: none;">
+			HER ER FORSIDEN!!!
+		</div>
+		<div id="box1" style="display: none;">
+			Test 1
+		</div>
+		<div id="box2" style="display: none;">
+			Test 2
+		</div>
+		<div id="box3" style="display: none;">
+			Test 3
+		</div>	
+	</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>GetElement 04</title>
+		<link rel="stylesheet" href="">
+		<script type="text/javascript">
+			function PostBack() 
+			{
+				var strColor = document.getElementById('Color');
+				if (strColor.value != "") {
+					document.bgColor = strColor.value;
+					}	
+				else {
+					alert("Du skal indtaste en farvekode!");	
+					}	
+			}
+		</script>
+	</head>
+
+	<body>
+		<input type="text" id="Color" /> eks.(#FF0000)
+		<br>
+		<input type="button" onclick="PostBack()" value="Skift" />
+	</body>
+</html>

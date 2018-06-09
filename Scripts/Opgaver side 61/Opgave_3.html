@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8" />
+	<title>Opgave 3</title>
+	</head>
+
+	<body> 
+	<script type="text/javascript">
+	// note: sekunder vil evaluere til type 'any' hvis ikke der sker en beregning på værdien; 
+	// derfor er en mindre konverteringsmanøvre nødvendig for at vi kan summere korrekt.
+	// dvs: >> var secondsAsInt = seconds * 1;
+
+	function outputSeconds() {
+	var hours = document.getElementById("hoursinput").value;
+	var minutes = document.getElementById("minutesinput").value;
+	var seconds = document.getElementById("secondsinput").value;
+
+	if (hours === "" || minutes === "" || seconds === "") {
+	alert("Indsæt venligst tre tal før beregning!")
+	}
+
+	var hoursinsecs = ((hours * 60) * 60);
+	var minsinsecs = minutes * 60;
+	var secondsAsInt = seconds * 1;
+	var result = hoursinsecs + minsinsecs + secondsAsInt; 
+	document.write("Du har indtastet: " + hours + " timer, " + minutes + " minutter, og " + seconds + " sekunder - i alt giver det " + result + " sekunder.");
+	}
+	</script>
+
+	<div>
+	<label>Tast antal timer</label>
+	<input type="number" id="hoursinput" />
+	</div>
+
+	<div>
+	<label>Tast antal minutter</label>
+	<input type="number" id="minutesinput" />
+	</div>
+
+	<div>
+	<label>Tast antal sekunder</label>
+	<input type="number" id="secondsinput" />
+	</div>
+
+	<div>
+	<input type="button" value="Beregn" onclick="outputSeconds();" />
+	</div>
+
+	</body>
+</html>

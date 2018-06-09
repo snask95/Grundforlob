@@ -1,0 +1,26 @@
+body {
+	background-color: #f3f3f3;
+}
+
+.headerBox {
+	margin: 0px;
+	width: 500px;
+	padding: 5px;
+	text-align: center;
+	font-weight: bold;
+	background: #c9c9c9;
+	border: 1px solid black;
+}
+
+.animBox {
+	margin: 0px;
+	background: #ffffff;
+	border: 1px solid black;
+	height: 0px;
+	width: 0px;
+}
+
+.hideBox {
+	padding: 5px;
+	display: none;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Moving Objects</title>
+		<link rel="stylesheet" href="">
+		<style type="text/css">
+			.move {
+				position: relative;
+				cursor: move;
+			}
+		</style>
+		<script type="text/javascript">
+			function Move(obj) {
+				if (obj.className == "move") {
+					var ran1 = Math.random() * 400;
+					var ran2 = Math.random() * 300;
+					obj.style.left = ran1 + "px";
+					obj.style.top = ran2 + "px";
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<div onmouseover="Move(this);" class="move">
+			Hej med dig :D
+		</div>
+		<img src="Images/Blue.jpg" onmouseover="Move(this);" class="move" />
+		<br/>
+		<img src="Images/Red.jpg" onmouseover="Move(this);" class="move" />
+		<br/>
+	</body>
+</html>

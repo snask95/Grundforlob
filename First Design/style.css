@@ -1,0 +1,191 @@
+body{
+	background-color: #C4C8BF;
+}
+
+/* Toppen */
+
+.header{
+	width: 100%;
+	height: 200px;
+	margin-top: 5px;
+}
+
+.headpic{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+ul{
+	list-style-type: none;
+}
+
+li{
+	float: left;
+	border-right: 1px solid #8F88BF;
+	position: relative;
+}
+
+li a{
+	display: block;
+	background-color:#C4C8BF;
+	font:  1em Arial;
+	color: black;
+	text-decoration: none;
+	padding: 0.6em 1.2em;
+}
+
+ul ul{
+	display: none;
+	width: 10em;
+	position: absolute;
+	background: #666;
+}
+
+ul li:hover ul{
+	display: block;
+}
+
+ul ul li{
+	width: 100%;
+}
+
+ul ul li a{
+	color: #948080;
+	background: #948080;
+}
+
+ul ul li a:hover{
+	color: #948080;
+	background: #948080;
+}
+
+ /* Toppen slut */
+
+
+
+/* Midt section */
+
+section{
+	background-color: #A5BCD0;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+}
+
+h1{
+	width: 300px;
+	height: 20px;
+	font-family: Verdana;
+	font-size: 24px;
+	margin: 5px 0px 15px 30px;
+	padding: 5px;
+	float: left;
+}
+
+article{
+	font-family: tahoma;
+	font-size: 16px;
+}
+
+.nyheder{
+	float: left;
+}
+
+.produkter{
+	float: left;
+}
+
+.section{
+	margin-top: 15px;
+	width: 100%;
+	height: 500px;
+	float: left;
+}
+
+.article1{
+	width: 500px;
+	height: auto;
+	float: left;
+	margin: 5px 0px 40px 30px;
+	padding: 5px;
+}
+
+.article2{
+	width: 500px;
+	height: auto;
+	float: left;
+	margin: 5px 0px 40px 30px;
+	padding: 5px;
+}
+
+.section2{
+	width: 100%;
+	height: 1200px;
+	float: left;
+}
+
+.om{
+	width: 1400px;
+}
+
+.om_os{
+	width: 1400px;
+	height: auto;
+	float: left;
+	margin: 5px 0px 40px 30px;
+	padding: 5px;
+}
+
+.medarbejder{
+	width: 1400px;
+	height: auto;
+	float: left;
+	margin: 5px 0px 40px 30px;
+	padding: 5px;
+}
+
+.vu{
+	width: 1400px;
+}
+
+.mereom{
+	width: 1400px;
+	height: auto;
+	float: left;
+	margin: 5px 0px 40px 30px;
+	padding: 5px;
+}
+
+.section3{
+	width: 100%;
+	height: 1000px;
+	float: left;
+}
+
+.knap{
+	margin: 10px;
+	float: left;
+}
+
+fieldset{
+	margin: 10px;
+	padding: 5px;
+}
+
+label{
+	margin: 5px;
+	padding: 5px;
+}
+
+textarea{
+	margin: 5px;
+	padding: 5px;
+}
+
+input{
+	margin: 5px;
+	padding: 2px;
+}
+
+/* Midt section slut */

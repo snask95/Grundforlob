@@ -1,0 +1,22 @@
+body {
+	margin-top: 0px;
+}
+
+.content {
+	height: 400px;
+	width: 400px;
+	background-color: grey;
+	margin: 20px;
+	padding-top: 40px;
+}
+
+#menu {
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	height: 40px;
+	width: 100%;
+	background-color: black;
+	margin: 0px;
+}
+

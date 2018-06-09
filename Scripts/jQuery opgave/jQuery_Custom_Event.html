@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>jQuery .on demo - custom</title>
+		<link rel="stylesheet" href="">
+		<script src="../jQuery/jquery-3.3.1.min.js"></script>
+
+		<style>
+			p {
+				color: red;
+			}
+
+			span {
+				color: blue;
+			}
+		</style>
+	</head>
+
+	<body>
+		<p>Siden har en custom event</p>
+		<button>Trigger for custom event</button>
+		<span style="display: none;"></span>
+
+		<script type="text/javascript">
+			$('p').on('myCustomEvent', function(event, myName) {
+				$(this).text(myName + ', halli hallo!');
+				$('span')
+					.stop()
+					.css('opacity', 1)
+					.text('myName = ' + myName)
+					.fadeIn(30)
+					.fadeOut(1000);
+			});
+			$('button').click(function () {
+				$('p').trigger('myCustomEvent', ['Spradebasse 1']);
+			});
+		</script>	
+	</body>
+</html>

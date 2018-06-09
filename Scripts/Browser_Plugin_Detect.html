@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<link rel="stylesheet" href="">
+	</head>
+
+	<body>
+		<div id="plugins"></div>
+
+		<script type="text/javascript">
+			document.write("<br/>");
+			document.write("Platform: " + navigator.platform);
+			document.write("<br/>");
+			document.write("User Agent String: " + navigator.userAgent);
+			document.write("<br/>");
+			document.write("Vendor: " + navigator.vendor);
+			document.write("<br/>");
+
+			if (navigator.userAgent.includes("Chrome", 0) && navigator.vendor.includes("Google", 0)) {
+				document.write("du bruger Google Chrome som browser!");
+			}
+
+			else if (navigator.userAgent.includes("Firefox", 0)) {
+				document.write("Du bruger Firefox som browser!");
+			}	
+
+			else if (navigator.userAgent.includes("Edge", 0)) {
+				document.write("Du bruger MS Edge som browser!");
+			}
+
+			var x = navigator.plugins.length;
+			var txt = "Totalt antal plugins installeret: " + x + "<br/>" + "<br/>";
+
+			txt += "Liste over navigator.plugins :" + "<br/>";
+
+			for (var i = 0; i < x; i++); {
+				txt += navigator.plugins[i].name + "<br/>";
+			}
+			document.getElementById("plugins").innerHTML = txt;
+
+		</script>
+	</body>
+</html>

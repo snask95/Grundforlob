@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Countdown</title>
+		<link rel="stylesheet" href="">
+		<script type="text/javascript">
+			var pause = 3000;
+			function countdown () {
+				if (pause <= 0) window.location = 'http://www.wired.com';
+				else {
+					document.getElementById('tid').innerHTML = pause / 1000 + ' ';
+					pause = pause - 1000;
+				}
+			}
+		</script>
+	</head>
+
+	<body onload="countdown();setInterval('countdown()', 1000)">
+		Du viderestilles til Wired Magazine om <span id="tid"></span>Sekunder.
+	</body>
+</html>

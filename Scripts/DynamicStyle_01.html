@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<link rel="stylesheet" href="">
+		<script type="text/javascript">
+			function show(object) {
+				document.all[object].style.visibility = 'visible';
+				document.all[object].style.zIndex = 100;
+			}
+			function hide(object) {
+				document.all[object].style.visibility = 'hidden';
+			}
+		</script>
+	</head>
+
+	<body>
+		<a href="#" onmouseover="show('test');">Menu 1</a>
+		<br>
+		<div id="test" style="visibility: hidden; width: 100px;" onmouseout="hide('test');">
+			- link 1 <br>
+			- link 2 <br>
+			- link 3 <br>
+			- link 4 <br>	
+		</div>	
+	</body>
+</html>

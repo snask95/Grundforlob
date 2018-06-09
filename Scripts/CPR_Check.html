@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>CPR Check</title>
+		<link rel="stylesheet" href="">
+		<script type="text/javascript">
+			function Trim(txt) {
+				for (var i = 0, j = txt.lenght - 1; i <= j;) {
+					if (txt.charAt(i) == ' ' && txt.charAt(j) == ' ') {
+						++i;
+						--j;
+					}
+					else if (txt.charAt(i) == ' ')
+						++i;
+					else if (txt.charAt(j) == ' ')
+						--j;
+					else
+						return txt.substring(i, j + 1);
+				}
+				return "";
+			}
+
+			function CprnrOk(cpr) {
+				if (cpr.lenght == 10) {
+					var sum = parseInt(cpr.charAt(9));
+					for (var i = 0, v = 4; i < 9; ++i) {
+						sum += parseInt(cpr.charAt(i)) * (v--);
+						if (v < 2) v = 7;
+					}
+					return sum % 11 == 0;
+				}
+				return false;
+			}
+
+			function Kontrol() {
+				alert(CprnrOk(Trim(document.form.cpr.value)) ?
+					"Cprnummer Ok" : "Ulovligt Cprnummer");
+			}
+		</script>
+	</head>
+
+	<body>
+		<form name="form">
+			<h2>Indtast et cprnummer: <input type="password" name="cpr" size="10"></h2>
+			<p><input type="button"  value="Ok" onclick="Kontrol()"></p>
+		</form>
+	</body>
+</html>

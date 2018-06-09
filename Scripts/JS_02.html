@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Fantastic Music Player V.1.0</title>
+		<link rel="stylesheet" href="">
+	</head>
+
+	<body>
+		<script type="text/javascript">
+			var audio = new Audio('/Audio/walkingpiano.mp3');
+			function playSound()
+				{
+					audio.play();
+				}
+			function pauseSound()
+				{
+					audio.pause();
+				}	
+			function stopSound()
+				{
+					audio.pause();
+					audio.currentTime - 0;
+				}	
+			//function setPlaybackRate() {
+			//	audio.playbackRate()2;
+			//}	
+		</script>
+
+		<a href="#" onclick="playSound();">Play</a><br/>
+		<a href="#" onclick="pauseSound();">Pause</a><br/>
+		<a href="#" onclick="stopSound();">Stop</a><br/>
+		<!--<a href="#" onclick="onclick="setPlaybacRate(2);">Double Playback Speed</a><br>-->
+	</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Skift titel</title>
+		<link rel="stylesheet" href="">
+		<script type="text/javascript">
+			function changeTitle(tekst) {
+				document.title = tekst;
+			}
+		</script>
+	</head>
+
+	<body>
+		<form>
+			Indtast en ny titel.
+			<br>
+			<input type="text" name="text">
+			<button type="button" onclick="changeTitle(this.form.text.value) value="Skriv en ny titel">Tryk</button>
+		</form>
+
+		Skriv en titel mens den tastes.
+		<br>
+		<input type="text" onkeyup="changeTitle(this.value)">
+		<br>
+		Vælg en titel fra listen.
+		<br>
+		<select onchange="changeTitle(this.value)">
+			<option value="Sko">Sko</option>
+			<option value="Støvler">Støvler</option>
+			<option value="Sandaler">Sandaler</option>
+		</select>
+	</body>
+</html>

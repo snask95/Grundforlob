@@ -1,0 +1,26 @@
+body {
+	background-color: #E80A8A;
+}
+
+p {
+	font-family: arial; sans-serif;
+	font-size: 1em
+}
+
+h1 {
+	font-family: 'Indie Flower', cursive; 
+	font-size: 3em;
+	font-weight: 400;
+	color: #FF0B1D;
+}
+
+h2 {
+	font-family: 'Indie Flower', cursive;
+	font-weight: 600;
+	font-size: 2em;
+	color: #700BFF;
+}
+
+ul {
+	list-style-type: cirlce;
+}

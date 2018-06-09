@@ -1,0 +1,44 @@
+table{
+	margin:  10px;
+	padding: 0px;
+}
+
+table, tr, td{
+	border: 1px solid #000;
+}
+
+td{
+	padding: 5px;
+}
+
+.www{
+	
+}
+
+.mail{
+	
+}
+
+.øvrige{
+	
+}
+
+.vanige{
+	background-color: lightcoral;
+}
+
+.uvanige{
+	background-color: lightcoral;
+}
+
+.www{
+	background-color: gold;
+}
+
+.mail{
+	background-color: gold;
+}
+
+.øvrige{
+	background-color: gold;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Loadtext</title>
+		<link rel="stylesheet" href="">
+		<script src="../jQuery/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$('#button1').click(function () {
+					$('#indhold').load('TextFiles/TextFile1.txt');
+				});
+				$('#button2').click(function () {
+					$('#indhold').load('TextFiles/TextFile2.txt');
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+		<h2>AJAX test</h2>
+		<div id="indhold">Vi starter med denne tekst.</div>
+		<br>
+		<br>
+		<button id="button1">Hent tekstfil 1</button>
+		<button id="button2">Hent tekstfil 2</button>
+	</body>
+</html>

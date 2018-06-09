@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Opgave 10</title>
+		<link rel="stylesheet" href="">
+	</head>
+
+	<body>
+		<label>Dit fulde navn</label>
+		<input type="text" id="fuldenavn" placeholder="Skriv dit navn her..">
+
+		<button onclick="names(document.getElementById('fuldenavn').value)">Vis</button>
+
+		<div id="target"></div>
+
+		<script type="text/javascript">
+			function names(name) {
+				var splitNames = name.split(" ");
+				var shuffledName = splitNames[2] + ' ' + splitNames[0] + ' ' + splitNames[1];
+
+				if(splitNames.length == 3) {
+					document.getElementById('target').innerHTML = shuffledName;
+				}
+				else {
+					alert('Hov.. Du skal have 3 navne!');
+				}
+			}
+		</script>
+
+	</body>
+</html>

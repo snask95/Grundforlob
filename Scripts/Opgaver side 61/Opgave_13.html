@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Opgave 13</title>
+</head>
+<body>
+	<label>Indtast tekst</label>
+
+	<input type="text" id="user_input" placeholder="Skriv et ord eller en sætning..">
+	<button onclick="countChars(document.getElementById('user_input').value)">Tæl tegn!</button>
+
+	<div id="count_characters"></div>
+
+	<script type="text/javascript">
+		function countChars(string) {
+			var result = "";
+
+			for(i = 0; i <= string.length; i++) {
+				if(i % 2) {
+					result += string.charAt(i).toUpperCase();
+				} else {
+					result += string.charAt(i).toLowerCase();
+				}
+
+				console.log(result)
+			}
+
+			document.getElementById('count_characters').innerHTML = result;
+		}
+	</script>
+</body>
+</html>

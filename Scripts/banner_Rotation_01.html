@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Rotating Banner Images</title>
+		<link rel="stylesheet" href="">
+		<script type="text/javascript">
+			var img = new new Array();
+			img[0] = new Image();
+			img[0].src = "Images/Guitar_1.jpg";
+			img[1] = new Image();
+			img[1].src = "Images/Piano_1.jpg";
+			img[2] = new Image();
+			img[2].src = "Images/Piano_2.jpg";
+			img[3] = new Image();
+			img[3].src = "Images/Guitar_2.jpg";
+			img[4] = new Image();
+			img[4].src = "Images/Microphone_1.jpg";
+
+			function SkiftBillede() {
+				rnd = Math.round(Math.random() * 4);
+				document.image1.src = Img[rnd].src;
+				setTimeout("SkiftBillede()", 1000);
+			}
+		</script>
+	</head>
+
+	<body onload="javascript:SkiftBillede();">
+		<img src="Images/Microphone_1.jpg" name="image1" width="300" height="168" />
+	</body>
+</html>

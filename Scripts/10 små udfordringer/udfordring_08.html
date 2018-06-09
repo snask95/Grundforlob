@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Udfordring_8</title>
+		<link rel="stylesheet" href="">
+	</head>
+<!--Lav en side, der viser hvor mange pixels det aktive vindue er i bredde og højde - hvor tallene bliver opdateret når vinduet ændre størrelse. -->	
+	<body>
+		<script type="text/javascript">
+			writeResize();
+
+			window.onresize = function() {
+				writeResize();
+			}
+
+			function writeResize() {
+				document.write(window.document.body.clientHeight + "x" + window.document.body.clientWidth);
+			}
+		</script>
+	</body>
+</html>

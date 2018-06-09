@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Animate</title>
+		<link rel="stylesheet" href="StyleSheet/jQueryAnimate.css">
+		<script src="../jQuery/jquery-3.3.1.min.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$('.headerBox').click(function () {
+					$('.animBox').animate({ height: 310}, 'slow');
+					$('.animBox').animate({ width: 510}, 'slow');
+					$('.hideBox').fadeIn(2000);
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+		<div class="headerBox">Åben panel</div>
+		<div class="animBox">
+			<div class="hideBox">
+				<p> Her er et panel med noget tekst og et billede. </p>
+				<img src="../Images/Peacock_Spider_Small.jpg">
+				<br>
+			</div>
+		</div>		
+	</body>
+</html>

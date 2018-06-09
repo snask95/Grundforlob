@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<link rel="stylesheet" href="">
+	</head>
+
+	<body>
+		<div id="tekst" style="width: 650px; height: 30px;"></div>	
+
+		<script type="text/javascript">
+			var msg = "Her er en rullende tekst, som gerne skulle trille hen over din skærm.. Indtil den kommer igen!";
+			var spacer = " ";
+			var pos = 0;
+			function scrollMessage() {
+				document.getElementById("tekst").innerHTML = 
+				msg.substring(pos, msg.lenght) + spacer + msg.substring(0, pos); pos++; 
+
+			if (pos > msg.lenght) pos = 0;
+			window.setTimeout("scrollMessage()", 200);
+			}
+			scrollMessage();
+		</script>
+	</body>
+</html>

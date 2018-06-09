@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Fade In</title>
+		<link rel="stylesheet" href="StyleSheet/jQueryStyles.css">
+		<script src="../jQuery/jquery-3.3.1.min.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$('.headerBox').click(function () {
+					$('.hideBox').fadeIn(2000);
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+		<div class="headerBox">Åben panel</div>
+		<div class="hideBox">
+			<p>Her er et panel med noget tekst og et billede. </p>
+			<img src="../Images/Guitar_3.jpg">
+		</div>		
+	</body>
+</html>

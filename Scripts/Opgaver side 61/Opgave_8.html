@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Opgave 8</title>
+		<link rel="stylesheet" href="">
+	</head>
+
+	<body>
+		<label>Indtast tekst</label>
+		<input type="text" id="user_text" placeholder="Skriv her...">
+
+		<label>Indtast søgeterm</label>
+		<input type="text" id="user_char" placeholder="Skriv her...">
+
+		<button onclick="regexSearch(document.getElementById('user_text').value, document.getElementById('user_char').value)">Vis</button>
+		
+		<div id="target"></div>
+
+		<script type="text/javascript">
+			function regexSearch(text, char) {
+				var reg = new RegExp(char, 'gi');
+				
+				if(text.match(reg)) {
+					var countMatch = text.match(reg).length;
+					document.getElementById('target').innerHTML = countMatch + ' matches fundet!';
+				}
+				else {
+					document.getElementById('target').innerHTML = 'Hovsa.. Ingen matches fundet. Prøv igen!';
+				}
+			}
+		</script>
+	</body>
+</html>
